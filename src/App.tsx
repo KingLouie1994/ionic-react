@@ -14,6 +14,7 @@ import {
   IonAlert,
 } from "@ionic/react";
 
+import InputControls from "./components/InputControls"
 import BmiControls from "./components/BmiControls";
 import BmiResults from "./components/BmiResults";
 
@@ -85,6 +86,11 @@ const App: React.FC = () => {
         </IonHeader>
         <IonContent className="ion-padding">
           <IonGrid>
+            <IonRow>
+              <IonCol>
+                <InputControls />
+              </IonCol>
+            </IonRow>
             <IonRow>
               <IonCol>
                 <IonItem>
